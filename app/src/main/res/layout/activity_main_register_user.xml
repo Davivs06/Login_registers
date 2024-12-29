@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_register_user">
+
+
+    <TextView
+        android:id="@+id/txtTiitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="REGISTRO DE USUARIOS"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textColorLink="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblAgregarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Foto"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/llyBotones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAgregarFoto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp">
+
+
+            <ImageView
+                android:id="@+id/imgUsr3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tilNombre"
+                app:srcCompat="@drawable/ic_user" />
+
+            <ImageView
+                android:id="@+id/imgBuilding2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tilBuilding"
+                app:srcCompat="@drawable/building" />
+
+            <ImageView
+                android:id="@+id/imgUsr2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tilNombre"
+                app:srcCompat="@drawable/ic_user" />
+
+            <ImageView
+                android:id="@+id/imgUsr"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tilNombre"
+                app:srcCompat="@drawable/ic_user" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNombre"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Nombre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgUsr"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilApellido"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+
+                android:layout_marginTop="5dp"
+                android:hint="Apellido"
+                app:layout_constraintEnd_toEndOf="@+id/tilNombre"
+                app:layout_constraintStart_toStartOf="@+id/tilNombre"
+                app:layout_constraintTop_toBottomOf="@+id/tilNombre">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageView
+                android:id="@+id/imgBuilding"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tilBuilding"
+                app:srcCompat="@drawable/building" />
+
+            <ImageView
+                android:id="@+id/imgBuilding3"
+                android:layout_width="40dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tilBuilding"
+                app:srcCompat="@drawable/ic_action_name" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBuilding"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="5dp"
+                android:hint="Empresa"
+                app:layout_constraintEnd_toEndOf="@+id/tilApellido"
+                app:layout_constraintStart_toStartOf="@+id/tilApellido"
+                app:layout_constraintTop_toBottomOf="@+id/tilApellido">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtEmpresa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageView
+                android:id="@+id/imgPhone"
+                android:layout_width="42dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tilPhone"
+                app:srcCompat="@android:drawable/ic_menu_call" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPhone"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="5dp"
+                android:hint="Telèfono"
+                app:layout_constraintEnd_toEndOf="@+id/tilBuilding"
+                app:layout_constraintStart_toStartOf="@+id/tilBuilding"
+                app:layout_constraintTop_toBottomOf="@+id/tilBuilding">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imgCorreo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tilCorreo" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCorreo"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="5dp"
+                android:hint="Correo"
+                app:layout_constraintEnd_toEndOf="@+id/tilPhone"
+                app:layout_constraintStart_toStartOf="@+id/tilPhone"
+                app:layout_constraintTop_toBottomOf="@+id/tilPhone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtcorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageView
+                android:id="@+id/imgFechaNac"
+                android:layout_width="47dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tilFechaNac"
+                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFechaNac"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="5dp"
+                android:hint="FechaNac"
+                app:layout_constraintStart_toStartOf="@+id/tilCorreo"
+                app:layout_constraintTop_toBottomOf="@+id/tilCorreo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtFechaNac"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/tggenero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/tilFechaNac"
+                app:layout_constraintTop_toBottomOf="@+id/tilFechaNac"
+                app:singleSelection="true">
+
+                <Button
+                    android:id="@+id/button1"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hombre" />
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <Button
+                android:id="@+id/button2"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:text="Mujer"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tggenero"
+                app:layout_constraintTop_toBottomOf="@+id/tilFechaNac" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="44dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tilPhone"
+                app:srcCompat="@android:drawable/sym_action_email" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llyBotones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btCancelar"
+            android:layout_width="157dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="Guardar" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="84dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTiitulo"
+        app:srcCompat="@drawable/ic_camera" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
